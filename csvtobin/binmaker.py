@@ -1,17 +1,16 @@
 import csv
 
-# ASCII'ye dönüştürme fonksiyonu
+# Converting ASCII
 def hex_to_ascii(hex_string):
     try:
         return bytes.fromhex(hex_string).decode('ascii')
     except ValueError:
-        return ''  # Geçersiz hex dizisi için boş bir string döndür
+        return '' 
 
-# Giriş ve çıkış dosya adları
 csv_file = 'hex_data.csv'
 bin_file = 'ascii_data.bin'
 
-# CSV dosyasından okuyup binary dosyaya yazma
+# CSV
 with open(csv_file, mode='r', newline='') as file_in, open(bin_file, mode='wb') as file_out:
     reader = csv.reader(file_in)
     
