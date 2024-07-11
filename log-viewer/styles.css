@@ -1,0 +1,205 @@
+body {
+    font-family: Arial, sans-serif;
+    transition: background-color 0.3s, color 0.3s;
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #000000;
+    background-color: #ffffff;
+}
+
+.container {
+    text-align: center;
+    width: 100%;
+    height: 115%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.light-theme {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+.dark-theme {
+    background-color: #000000;
+    color: #ffffff;
+}
+
+.switch {
+    position: absolute;
+    top: 47px;
+    right: 90px;
+    display: inline-block;
+    width: 60px;
+    height: 30px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    border-radius: 30px;
+    transition: 0.4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "\2600";
+    font-size: 18px;
+    left: 4px;
+    bottom: 4px;
+    color: #c4ec12;
+    transition: 0.4s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+input:checked + .slider:before {
+    content: "\1F319";
+    transform: translateX(30px);
+    color: #000;
+}
+
+.dark-theme .container {
+    color: #ffffff;
+}
+
+.statistics {
+    width: 90%;
+    height: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.statistics-header {
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 10px;
+    color: #333333;
+    padding: 10px 0;
+    border-bottom: 1px solid #cccccc;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.statistics-header a {
+    color: #007bff;
+    text-decoration: none;
+    padding: 7px 6px;
+    margin-right: 65px;
+    margin-top: -3px;
+    background-color: #007bff;
+    border: 1px solid #007bff;
+    border-radius: 5px;
+    font-size: 16px;
+    color: white;
+}
+
+.statistics-header a:hover {
+    background-color: white;
+    color: #007bff;
+}
+
+.chart-container {
+    flex-grow: 1;
+    height: 450px; /* İstediğiniz yüksekliği burada belirtebilirsiniz */
+    width : 1500px;
+}
+.log-entries-scrollable {
+    height: 30%;
+    overflow-y: auto;
+    margin-top: 20px;
+    background-color: #e0e0e0;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.log-entry {
+    background-color: #e0e0e0;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+.input-group {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    align-items: center;
+}
+
+.input-group input, .input-group select {
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #cccccc;
+}
+
+.input-group label {
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.light-theme .statistics {
+    background-color: #f0f0f0;
+    color: #333333;
+}
+
+.dark-theme .statistics {
+    background-color: #333333;
+    color: #ffffff;
+}
+
+.dark-theme .chart-container {
+    background-color: #444444;
+}
+
+.dark-theme .log-entries-scrollable {
+    background-color: #555555;
+}
+
+.dark-theme .log-entry {
+    background-color: #666666;
+}
+
+.dark-theme .input-group input, .dark-theme .input-group select {
+    background-color: #444444;
+    color: #ffffff;
+    border: 1px solid #666666;
+}
+
+.dark-theme .input-group label {
+    color: #ffffff;
+}
+
+.light-theme .statistics-header {
+    color: #333333;
+}
+
+.dark-theme .statistics-header {
+    color: #ffffff;
+}
