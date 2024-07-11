@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log Viewer</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <label class="switch">
+            <input type="checkbox" id="theme-toggle-checkbox">
+            <span class="slider"></span>
+        </label>
+
+        <div class="statistics">
+            <div class="statistics-header">
+                <span class="section-title">Generic Log Viewer</span>
+                <div class="input-group">
+                    <label for="ifilter">IP Filtre:</label>
+                    <input type="text" id="ifilter" placeholder="IP Filtre">
+        
+                    <label for="mfilter">Message Filtre:</label>
+                    <input type="text" id="mfilter" placeholder="Message Filtre">
+        
+                    <label for="logsayisi">Log Sayısı:</label>
+                    <select id="logsayisi">
+                        <option value="1">100</option>
+                        <option value="2">200</option>
+                        <option value="3">500</option>
+                        <option value="4">1000</option>
+                    </select>
+        
+                    <label for="refresh">Yenileme Sıklığı:</label>
+                    <select id="refresh">
+                        <option value="A">1</option>
+                        <option value="B">2</option>
+                        <option value="C">5</option>
+                        <option value="D">10</option>
+                        <option value="E">Durdur</option>
+                    </select>
+                </div>
+                <a href="#" id="download-csv">CSV Olarak İndir</a>
+            </div>
+            <div class="chart-container">
+                <canvas id="stats-chart"></canvas>
+            </div>
+            <div id="log-entries" class="log-entries-scrollable">
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
