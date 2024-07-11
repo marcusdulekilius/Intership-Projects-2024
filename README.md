@@ -20,8 +20,8 @@ This  one reads those hex digits and turns them into ASCII codes for less memory
 # log-viewer
 _____________
 
-index.html
-___________
+// index.html
+
 This HTML code defines a log viewer web page with dynamic functionality.
 
 styles.css
