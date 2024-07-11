@@ -25,7 +25,7 @@ This HTML code defines a log viewer web page with dynamic functionality:
 # 2) styles.css
 This CSS code controls the appearance of a dynamic log viewing application. Here's a breakdown of its functions:
 
->> General Styling:
+> General Styling:
 
 * body: Defines overall page fonts, transition effects, and basic layout settings.
 * .container: Sets the general style and layout of the log viewing area.
