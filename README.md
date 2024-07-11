@@ -30,7 +30,7 @@ This CSS code controls the appearance of a dynamic log viewing application. Here
 * body: Defines overall page fonts, transition effects, and basic layout settings.
 * .container: Sets the general style and layout of the log viewing area.
 * .switch and .slider: Controls the style and animation of the theme toggle switch button.
-  
+
 > Theme Settings:
 
 * .light-theme and .dark-theme: Defines background and text colors for light and dark themes.
