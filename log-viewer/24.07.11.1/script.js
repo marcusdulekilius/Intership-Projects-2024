@@ -24,9 +24,9 @@ document.addEventListener('DOMContentLoaded', function () {
         "192.168.1.11", "192.168.1.12", "192.168.1.13", "192.168.1.14", "192.168.1.15"
     ];
 
-    for (let i = 1; i <= 1000; i++) {
-        let ipIndex = (i - 1) % 15;
-        logData.push({ ip: ipAddresses[ipIndex], message: `Sample message ${i}` });
+     for (let i = 1; i <= 1000; i++) {
+        let randomIndex = Math.floor(Math.random() * ipAddresses.length);
+        logData.push({ ip: ipAddresses[randomIndex], message: `Sample message ${i}` });
     }
 
     function populateLogTable(data) {
