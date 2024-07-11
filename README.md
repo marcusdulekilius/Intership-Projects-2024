@@ -31,21 +31,21 @@ This CSS code controls the appearance of a dynamic log viewing application. Here
 * .container: Sets the general style and layout of the log viewing area.
 * .switch and .slider: Controls the style and animation of the theme toggle switch button.
   
->> Theme Settings:
+> Theme Settings:
 
 * .light-theme and .dark-theme: Defines background and text colors for light and dark themes.
 * Selectors under .dark-theme apply custom styles when in dark mode (e.g., background colors for charts and log viewing area).
 
->> Statistics Panel Styles:
+> Statistics Panel Styles:
 
 * .statistics and .statistics-header: Defines the overall style of the statistics panel and appearance of the header section. Emphasizes links and interactive elements.
   
->> Log Entries and Filters:
+> Log Entries and Filters:
 
 * .log-entries-scrollable and .log-entry: Sets the style of log entries and scrollable view for logs.
 * .input-group: Controls the layout and style of filtering inputs.
 
->> Color and Contrast Settings:
+> Color and Contrast Settings:
 
 * Manages color, background, and text color changes based on theme toggling.
 This CSS ensures the application maintains a consistent appearance in both light and dark theme modes, adapting dynamically to user interactions for theme changes.
@@ -53,15 +53,15 @@ This CSS ensures the application maintains a consistent appearance in both light
 # 3) script.js
 This JavaScript code sets up a dynamic log viewer application with filtering and visualization capabilities:
 
->> Theme Toggle: It allows users to switch between light and dark themes by clicking a checkbox (theme-toggle-checkbox). The theme change is handled by adding or removing the dark-theme class from the body element.
+> Theme Toggle: It allows users to switch between light and dark themes by clicking a checkbox (theme-toggle-checkbox). The theme change is handled by adding or removing the dark-theme class from the body element.
 
->> Log Data Generation: Initially, it creates an array logData containing 200 log entries. Each log entry consists of an IP address (ip) and a message (message). The first log entry is a sample "User logged in successfully." while subsequent entries are generated with placeholder messages.
+> Log Data Generation: Initially, it creates an array logData containing 200 log entries. Each log entry consists of an IP address (ip) and a message (message). The first log entry is a sample "User logged in successfully." while subsequent entries are generated with placeholder messages.
 
->> Table Population: The populateLogTable function dynamically creates HTML table rows (<tr>) for each log entry in logData. It inserts columns (<td>) displaying the IP address and message into each row. This function is called on page load to populate the log entries table (log-entries).
+> Table Population: The populateLogTable function dynamically creates HTML table rows (<tr>) for each log entry in logData. It inserts columns (<td>) displaying the IP address and message into each row. This function is called on page load to populate the log entries table (log-entries).
 
->> Display Log Entries: The displayLogEntries function updates the displayed log entries based on user input in filter fields (ifilter for IP and mfilter for message). It filters logData based on the entered filters and updates the DOM to show matching log entries.
+> Display Log Entries: The displayLogEntries function updates the displayed log entries based on user input in filter fields (ifilter for IP and mfilter for message). It filters logData based on the entered filters and updates the DOM to show matching log entries.
 
->> Filtering: Event listeners are set up to listen for input changes (input event) in the filter fields (ifilter and mfilter). When a filter value changes, the filterLogs function is triggered. It filters logData based on the current filter values and calls displayLogEntries to update the displayed logs accordingly.
+> Filtering: Event listeners are set up to listen for input changes (input event) in the filter fields (ifilter and mfilter). When a filter value changes, the filterLogs function is triggered. It filters logData based on the current filter values and calls displayLogEntries to update the displayed logs accordingly.
 
->> Statistics Display: The displayStatistics function calculates and displays statistics about the log data. It counts occurrences of each unique IP address (ip) using reduce, prepares chart data using Chart.js, and renders a bar chart (stats-chart) displaying the message count per IP address.
+> Statistics Display: The displayStatistics function calculates and displays statistics about the log data. It counts occurrences of each unique IP address (ip) using reduce, prepares chart data using Chart.js, and renders a bar chart (stats-chart) displaying the message count per IP address.
 Final version does those transactions using API(s) and Endpoints.
