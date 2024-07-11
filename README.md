@@ -20,11 +20,11 @@ This  one reads those hex digits and turns them into ASCII codes for less memory
 # log-viewer
 _____________
 
-*_index.html_*
+> _index.html_
 
 This HTML code defines a log viewer web page with dynamic functionality.
 
-*_styles.css_*
+> _styles.css_
 
 This CSS code controls the appearance of a dynamic log viewing application.
 
@@ -53,7 +53,7 @@ This CSS code controls the appearance of a dynamic log viewing application.
 * Manages color, background, and text color changes based on theme toggling.
 This CSS ensures the application maintains a consistent appearance in both light and dark theme modes, adapting dynamically to user interactions for theme changes.
 
-*_script.js_*
+> _script.js_
 
 This JavaScript code sets up a dynamic log viewer application with filtering and visualization capabilities:
 
