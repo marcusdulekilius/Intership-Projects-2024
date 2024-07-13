@@ -20,7 +20,7 @@ document.addEventListener('DOMContentLoaded', function () {
     let logData = [];
 
     // Fetch data from API
-    fetch('http://141.147.9.177:8080/api/generic-logs')
+    fetch('YOUR_API_LINK')
         .then(response => response.json())
         .then(data => {
             logData = data;
