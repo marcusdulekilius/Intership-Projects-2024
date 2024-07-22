@@ -17,6 +17,10 @@ This one creates seven hex digits for 1 million unique lines. And saves this lis
 > binmaker.py
 This  one reads those hex digits and turns them into ASCII codes for less memory. But this code has a problem, and it is that the converting between ASCII and hex aren't starting from 0 to 127, it starts from 20 to 127.
 
+# userfile
+____________
+This C code does exactly same thing with csvsort. But because of i wrote this one with C programming language, it works faster than csvsort's Python codes.
+
 # log-viewer
 _____________
 
